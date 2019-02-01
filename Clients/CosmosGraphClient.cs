@@ -71,8 +71,7 @@ namespace Cloud.Compete.Graph.Clients
 
         private static string GetEnvironmentVariable(string name)
         {
-            return name + ": " + 
-                System.Environment.GetEnvironmentVariable(name, EnvironmentVariableTarget.Process);
+            return System.Environment.GetEnvironmentVariable(name, EnvironmentVariableTarget.Process);
         }
     }
 }
